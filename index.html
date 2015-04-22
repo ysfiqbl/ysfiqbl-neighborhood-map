@@ -5,7 +5,7 @@
     <title>Simple Map</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
     <style>
     html,
@@ -35,12 +35,15 @@
 </head>
 
 <body>
-	<div class="input-group">
-		<input id="searchTextField" type="text" class="form-control" placeholder="Search" />
-		<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
-	</div>
+	<div id="map-canvas"></div>
+    <div id="search-div" class="input-group search-div">
+        <span class="input-group-addon list-icon"><i class="glyphicon glyphicon-list"></i></span>
+        <input class="form-control" type="text" placeholder="Search" />
+        <span class="input-group-addon search-icon"><i class="glyphicon glyphicon-search"></i></span>
+        <span class="input-group-addon filter-icon"><i class="glyphicon glyphicon-filter"></i></span>
 
-    <div id="map-canvas"></div>
+    </div>
+
     <script src="js/libs/jquery.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
 </body>
