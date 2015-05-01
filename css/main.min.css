@@ -4,6 +4,12 @@
 	left: 50px;
 	width: 480px;
 }
+#location-suggestions {
+	position: absolute;
+	top: 60px;
+	left: 90px;
+	width: 359px;
+}
 
 #icons {
 	position: absolute;
@@ -14,6 +20,10 @@
 
 .filter {
 	border-left: 10px;
+}
+
+.list-group-item:hover {
+	background: #F0F5F5;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
