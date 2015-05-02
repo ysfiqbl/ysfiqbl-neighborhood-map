@@ -32,8 +32,8 @@
 		</span>
 	</div>
 	<div id="location-suggestions" data-bind="if: showLocationSearchDiv">
-		<ul class="list-group" data-bind="{foreach: locationSearchSuggestions}">
-			<li class="list-group-item" data-bind="text: title"></li>
+		<ul class="list-group" data-bind="foreach: locationSearchSuggestions">
+			<li class="list-group-item" data-bind="text: title, click: $parent.showLocation"></li>
 		</ul>
 	</div>
 
