@@ -22,14 +22,12 @@
 <body>
 	<div id="map-canvas"></div>
 	<div id="search-div" class="input-group search-div">
-		<span class="input-group-addon list-icon">
-			<i class="glyphicon glyphicon-list"></i>
+		<span class="input-group-btn list-icon">
+			<button class="btn btn-default" type="button">
+				<i class="glyphicon glyphicon-list"></i>
+			</button>
 		</span>
 		<input class="form-control" type="text" data-bind="value: locationSearchQuery, valueUpdate: 'keyup', click: initializeSearchText" placeholder="Search" />
-		<span class="input-group-addon search-icon"><i class="glyphicon glyphicon-search"></i></span>
-		<span class="input-group-addon filter-icon">
-			<i class="glyphicon glyphicon-filter"></i>
-		</span>
 	</div>
 	<div id="location-suggestions" data-bind="if: showLocationSearchDiv">
 		<ul class="list-group" data-bind="foreach: locationSearchSuggestions">
