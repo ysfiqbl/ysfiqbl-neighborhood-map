@@ -37,6 +37,22 @@
 		</ul>
 	</div>
 
+	<template id="infowindow-template">
+		<div id="infowindow" class="input-group">
+        	<input type="text" class="form-control" data-bind="value: currentLocation().title" placeholder="Location title...">
+        	<span class="input-group-btn">
+        		<button class="btn btn-default" type="button" data-bind="click: saveLocation">
+        			<i class="glyphicon glyphicon-save"></i>
+        		</button>
+        	</span>
+        	<span class="input-group-btn">
+        		<button class="btn btn-default" type="button" data-bind="click: removeLocation">
+        			<i class="glyphicon glyphicon-trash"></i>
+        		</button>
+        	</span>
+        </div>
+	</template>
+
 	<script src="js/libs/jquery.min.js"></script>
 	<!--<script src="js/libs/bootstrap.min.js"></script>-->
 	<script src="js/libs/knockout.min.js"></script>
