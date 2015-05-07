@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Simple Map</title>
+	<title>Neighborhood Map</title>
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -20,27 +20,19 @@
 </head>
 
 <body>
-	<div id="map-canvas" data-bind="visible: !listView()"></div>
-	<div id="map-view" data-bind="visible: !listView()">
-		<div id="search-div" class="input-group search-div">
-			<span class="input-group-btn list-icon">
-				<button class="btn btn-default" type="button" data-bind="click: showList">
-					<i class="glyphicon glyphicon-list"></i>
-				</button>
-			</span>
-			<input class="form-control" type="text" data-bind="value: locationSearchQuery, valueUpdate: 'keyup', click: initializeSearchText" placeholder="Search" />
-		</div>
-		<div id="location-suggestions" data-bind="if: showLocationSearchDiv">
-			<ul class="list-group" data-bind="foreach: locationSearchSuggestions">
-				<li class="list-group-item" data-bind="text: title, click: $parent.showLocation"></li>
-			</ul>
-		</div>
+	<div id="map-canvas"></div>
+	<div id="search-div" class="input-group search-div">
+		<span class="input-group-btn list-icon">
+			<button class="btn btn-default" type="button" data-bind="click: showList">
+				<i class="glyphicon glyphicon-list"></i>
+			</button>
+		</span>
+		<input class="form-control" type="text" data-bind="value: locationSearchQuery, valueUpdate: 'keyup', click: initializeSearchText" placeholder="Search" />
 	</div>
-
-	<div class="container list-view" data-bind="if: listView()">
-		<div class="row">
-			<div class="col-lg-12">List View</div>
-		</div>
+	<div id="location-suggestions" data-bind="if: showLocationSearchDiv">
+		<ul class="list-group" data-bind="foreach: locationSearchSuggestions">
+			<li class="list-group-item" data-bind="text: title, click: $parent.showLocation"></li>
+		</ul>
 	</div>
 
 	<template id="infowindow-template">
