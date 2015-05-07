@@ -25,12 +25,6 @@
 		right: 5%;
 		width: 90%;
 	}
-	.glyphicon-search {
-		display: none;
-	}
-	.search-icon {
-		display: none;
-	}
 
 	#location-suggestions {
 		position: absolute;
