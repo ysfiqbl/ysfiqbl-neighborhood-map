@@ -8,19 +8,13 @@
 	position: absolute;
 	top: 40px;
 	left: 90px;
-	width: 359px;
+	width: 440px;
 }
 
-#icons {
-	position: absolute;
-	top: 50px;
-	left: 50px;
-	width: 50px;
+.list-group-item:hover {
+	background: #F0F5F5;
 }
 
-.filter {
-	border-left: 10px;
-}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 767px){
