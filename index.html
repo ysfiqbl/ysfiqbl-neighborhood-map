@@ -50,8 +50,15 @@
 					</button>
 				</span>
 			</div>
-			<div class="input-group">
-				<span data-bind="text: currentLocation().address"></p>
+			<div class="input-group" data-bind="visible: showInfo">
+				<p>Address: <span data-bind="text: currentLocation().address"></span></p>
+				<p>
+					Checkin Count: <span data-bind="text: currentLocation().checkinsCount"></span>
+					,&nbsp;
+					User Count: <span data-bind="text: currentLocation().usersCount"></span>
+					,&nbsp;
+					Tip Count: <span data-bind="text: currentLocation().tipCount"></span>
+				</p>
 			</div>
 			<!--<div data-bind="foreach: images">
 				<img src="" data-bind="attr: {src: data}">
