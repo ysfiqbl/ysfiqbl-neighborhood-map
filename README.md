@@ -14,4 +14,4 @@ list icon to the left of the search bar.
 
 ## Instructions
 You can use the app [here](http://ysfiqbl.github.io/ysfiqbl-neighborhood-map/).
-You can also download and extract the zip file and open the index.html file in your favorite javascript enabled browser.
+You can also download and extract the zip file and open the dist/index.html file in your favorite javascript enabled browser.
