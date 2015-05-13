@@ -13,5 +13,5 @@ You can search for locations using the search bar. To toggle a drop down list of
 list icon to the left of the search bar.
 
 ## Instructions
-You can use the app [here](http://ysfiqbl.github.io/ysfiqbl-neighborhood-map/)
+You can use the app [here](http://ysfiqbl.github.io/ysfiqbl-neighborhood-map/).
 You can also download and extract the zip file and open the index.html file in your favorite javascript enabled browser.
