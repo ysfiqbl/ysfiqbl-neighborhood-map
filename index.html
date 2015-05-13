@@ -36,19 +36,27 @@
 	</div>
 
 	<template id="infowindow-template">
-		<div id="infowindow" class="input-group">
-        	<input type="text" class="form-control" data-bind="value: currentLocation().title" placeholder="Location title...">
-        	<span class="input-group-btn">
-        		<button class="btn btn-default" type="button" data-bind="click: saveLocation">
-        			<i class="glyphicon glyphicon-save"></i>
-        		</button>
-        	</span>
-        	<span class="input-group-btn">
-        		<button class="btn btn-default" type="button" data-bind="click: removeLocation">
-        			<i class="glyphicon glyphicon-trash"></i>
-        		</button>
-        	</span>
-        </div>
+		<div id="infowindow">
+			<div class="input-group">
+				<input type="text" class="form-control" data-bind="value: currentLocation().title" placeholder="Location title...">
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="button" data-bind="click: saveLocation">
+						<i class="glyphicon glyphicon-save"></i>
+					</button>
+				</span>
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="button" data-bind="click: removeLocation">
+						<i class="glyphicon glyphicon-trash"></i>
+					</button>
+				</span>
+			</div>
+			<div class="input-group">
+				<span data-bind="text: currentLocation().address"></p>
+			</div>
+			<!--<div data-bind="foreach: images">
+				<img src="" data-bind="attr: {src: data}">
+			</div>-->
+		</div>
 	</template>
 
 	<script src="js/libs/jquery.min.js"></script>
