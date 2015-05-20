@@ -1,4 +1,6 @@
 # Neighborhood Map
+The map will preload a list of locations if you do not have any saved locations.
+
 Click on the map to mark a location. When you mark a location a pop-up window will open up where you can
 assign a name to the location and save. Clicking the trash can icon will remove the location from the map.
 Clicking an already existing location marker will open up the pop-up window which will contain the name
@@ -13,5 +15,5 @@ You can search for locations using the search bar. To toggle a drop down list of
 list icon to the left of the search bar.
 
 ## Instructions
-You can use the app [here](http://ysfiqbl.github.io/ysfiqbl-neighborhood-map/).
+You can use the app [here](http://ysfiqbl.github.io/ysfiqbl-neighborhood-map/dist/).
 You can also download and extract the zip file and open the dist/index.html file in your favorite javascript enabled browser.
