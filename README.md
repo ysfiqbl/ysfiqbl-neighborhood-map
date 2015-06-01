@@ -1,4 +1,6 @@
 # Neighborhood Map
+Neighborhood map allows you to mark, name and save locations on a Google map.
+
 The map will preload a list of locations if you do not have any saved locations.
 
 Click on the map to mark a location. When you mark a location a pop-up window will open up where you can
