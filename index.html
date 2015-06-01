@@ -16,6 +16,15 @@
 		padding: 0px
 	}
 	</style>
+	<script src="js/libs/offline.min.js"></script>
+	<script>
+		var checkConnection = function() {
+			if (Offline.state === 'up') {
+				Offline.check();
+			}
+			setInterval(checkConnection, 5000);
+		}
+	</script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.19"></script>
 </head>
 
