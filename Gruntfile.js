@@ -5,6 +5,7 @@ module.exports = function(grunt) {
     	cssmin : {
             css:{
             	files: {
+                	'dist/css/offline.min.css': ['css/offline.min.css'],
                 	'dist/css/main.min.css': ['css/main.min.css']
                 }
             }
