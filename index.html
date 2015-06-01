@@ -6,6 +6,7 @@
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/offline.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.min.css">
 	<style>
 	html,
@@ -16,6 +17,15 @@
 		padding: 0px
 	}
 	</style>
+	<script src="js/libs/offline.min.js"></script>
+	<script>
+		var checkConnection = function() {
+			if (Offline.state === 'up') {
+				Offline.check();
+			}
+			setInterval(checkConnection, 5000);
+		}
+	</script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.19"></script>
 </head>
 
@@ -51,13 +61,13 @@
 				</span>
 			</div>
 			<div class="input-group" data-bind="visible: showInfo">
-				<p>Address: <span data-bind="text: currentLocation().address"></span></p>
+				<p>Address: <span data-bind="text: address"></span></p>
 				<p>
-					Checkin Count: <span data-bind="text: currentLocation().checkinsCount"></span>
+					Checkin Count: <span data-bind="text: checkinsCount"></span>
 					,&nbsp;
-					User Count: <span data-bind="text: currentLocation().usersCount"></span>
+					User Count: <span data-bind="text: usersCount"></span>
 					,&nbsp;
-					Tip Count: <span data-bind="text: currentLocation().tipCount"></span>
+					Tip Count: <span data-bind="text: tipCount"></span>
 				</p>
 			</div>
 			<div class="input-group" data-bind="visible: showError">
